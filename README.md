@@ -11,6 +11,10 @@ npm run dev
 
 `npm test` prüft Stellregeln, Lastberechnung und JSON-Import. `npm run build` erstellt die Produktionsdateien in `dist`.
 
+## GitHub Pages
+
+Bei jedem Push baut die GitHub Action die Anwendung und veröffentlicht sie unter `https://f11h.github.io/ladeplaner/`. Im Repository muss unter **Settings → Pages → Build and deployment** als Quelle **GitHub Actions** ausgewählt sein. Da jeder Branch-Push veröffentlicht wird, ersetzt der zuletzt deployte Stand die öffentliche Seite. Der Pages-Build verwendet `/ladeplaner/` als Basispfad; lokale Builds behalten den Standardpfad `/`.
+
 ## Planungsregeln
 
 - Die Stirnseite ist oben; die Position in Längsrichtung wird von dort in Zentimetern gemessen.
